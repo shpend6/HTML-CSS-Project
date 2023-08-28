@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Orbitron&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Job Agency</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="subcontainer">
+                <nav>
+                    <a href="#" class="nav-branding">
+                        <img src="./assets/img/logo.jpg"></img>
+                    </a>
+                    <ul class="nav-menu">
+                        <li>
+                            <a href="#">
+                                BALLINA
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about">
+                                RETH NESH
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#reviews" onClick={handleNavLinkClick}>
+                                VLERESIMET
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#locations" onClick={handleNavLinkClick}>
+                                LOKACIONET
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="right-side-nav">
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="language-switcher">
+                            <h5>SH</h5>
+                            <img src="assets/img/al.svg"></img>
+                            <button>
+                                <img src="assets/img/menu-arrow.png" id="arrow-img" />
+                            </button>
+                            <ul class="dropdown-options">
+                                <li>Shqip</li>
+                                <li>Deutsch</li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <h1>
+            GJENI <span class="highlighted-word">PUNËN</span> E ËNDRRAVE
+            <span class="break-point">
+                ME <span class="highlighted-word">ZERO</span> KOSTO.
+            </span>
+        </h1>
+        <p>
+            Zbuloni mundësitë e punësimit në fushën e infermierisë, pa asnjë kost.
+        </p>
+        <div class="button-container">
+            <button class="contact-button">Na Kontaktoni</button>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h1>RRETH NESH</h1>
+        <p>
+            Agjencia jonë punëson dhe ofron shërbime profesionale për infermierë. Qëllimi ynë është të sigurojmë një
+            lidhje të
+            përsosur mes personelit të infermierisë dhe spitaleve jashte vendit. Ne shohim vizionin tonë si krijues të
+            mundësive
+            të
+            punësimit të qëndrueshëm dhe të cilësisë së lartë në sektorin shëndetësor. Sherbimet tona përfshijnë oferta
+            pune te
+            personalizuar, trajnime të specializuara dhe mbështetje të gjatë për klientët dhe infermierët në të gjithë
+            rrugën.
+        </p>
+
+
+        <div class="employee-grid">
+            <div class="employee-card">
+                <img src="./assets/img/CEO.png"></img>
+                <h3>Amir Bislimi</h3>
+                <h5>CEO</h5>
+                <a>amir.bislimi@gmai.com</a>
+            </div>
+            <div class="employee-card">
+                <img src="./assets/img/manager.png"></img>
+                <h3>Mirlind Xhaferaj</h3>
+                <h5>Menaxher</h5>
+                <a>mirlind.xhaferaj@gmai.com</a>
+            </div>
+            <div class="employee-card center">
+                <img src="./assets/img/translator.png"></img>
+                <h3>Flutura Limani</h3>
+                <h5>Perkthyese e licensuar</h5>
+                <a>flutura.limani@gmai.com</a>
+            </div>
+        </div>
+    </section>
+    <section class="reviews" id="reviews">
+        <h1>Pervojat e klienteve tane</h1>
+        <div class="review-box">
+            <div class="review">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p class="comment">Kompania juaj na ka ndihmuar me profesionalizëm të jashtëzakonshëm. Gjetja e punës
+                    dhe perkthimi i dokumentave ishin të
+                    lehtësuar në mënyrë të pashembullt, duke na dhënë sigurinë e nevojshme. Shërbimet e ofruara pa kosto
+                    janë mjaft të
+                    vlerësuara.</p>
+                <div class="review-name-img">
+                    <img src="assets/img/nurse.png"></img>
+                    <div class="review-name-title">
+                        <h4>Viola Kadriu</h4>
+                        <p>Infermiere</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review" id="second-review">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p class="comment">Ishte një eksperiencë e mrekullueshme të bashkëpunojmë me kompaninë tuaj. Nga gjetja
+                    e banimit në Gjermani deri te
+                    procesi i punësimit, të gjitha u bënë pa asnjë shqetësim financiar. Ekipi juaj na ofroi mbështetje
+                    të plotë dhe
+                    gjithmonë ishte pranë për çdo kërkesë tonë.</p>
+                <div class="review-name-img">
+                    <img src="./assets/img/nurse-second.png"></img>
+                    <div class="review-name-title">
+                        <h4>Fiona Miftari</h4>
+                        <p>Infermiere</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i class="fas fa-arrow-right right-arrow"></i>
+    </section>
+    <section class="locations" id="locations">
+        <h1>
+            Lokacionet ku veprojme
+        </h1>
+        <div class="location-box">
+            <div class="location">
+                <img src="assets/img/klasa.jpg" />
+                <div class="location-info">
+                    <h1>Presheve</h1>
+                    <h2>Serbi</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+                        nulla optio porro. Obcaecati, aliquam eum!
+                    </p>
+                    <button>APLIKO</button>
+                </div>
+            </div>
+            <div class="location reverse">
+                <div class="location-info">
+                    <h1>Gjilan</h1>
+                    <h2>Kosove</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+                        nulla optio porro. Obcaecati, aliquam eum!
+                    </p>
+                    <button>APLIKO</button>
+                </div>
+                <img src="assets/img/testim.jpg" />
+            </div>
+            <div class="location">
+                <img src="assets/img/Ifermiert.jpg" />
+                <div class="location-info">
+                    <h1>Tirane</h1>
+                    <h2>Shqiperi</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem
+                        nulla optio porro. Obcaecati, aliquam eum!
+                    </p>
+                    <button>APLIKO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-section">
+            <h2>MENU</h2>
+            <ul>
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#about">
+                        RRETH NESH
+                    </a>
+                </li>
+                <li>
+                    <a href="#reviews">
+                        VLERESIMET
+                    </a>
+                </li>
+                <li>
+                    <a href="#locations">
+                        LOKACIONET
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h2>CONTACT INFO</h2>
+            <div class="contact-info"><i class="fas fa-map-marker-alt"></i>
+                <p>Rruga 15 Nentori,<span>Presheve, Serbi</span></p>
+            </div>
+            <div class="contact-info"> <i class="fas fa-phone"></i>
+                <p>+381 64 567 872</p>
+            </div>
+            <div class="contact-info"><i class="fas fa-envelope"></i>
+                <p>shenajobs@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h2>SOCIALS</h2>
+            <div class="social-media-icon"><a href="https://www.facebook.com" target="_blank"><i
+                        class="fab fa-facebook fa-lg facebook-icon"></i></a>
+                <p>Facebook</p>
+            </div>
+            <div class="social-media-icon">
+                <a href="https://www.instagram.com" target="_blank"><i
+                        class="fab fa-instagram fa-lg instagram-icon"></i></a>
+                <p>Instagram</p>
+            </div>
+        </div>
+
+    </footer>
+    <script></script>
+</body>
+
+</html>
